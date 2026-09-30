@@ -10,23 +10,93 @@
 <body class="page-category_tvs">
     <h1>Categoria de produtos</h1>
     <h2>TVs</h2>
-    <ol id="primary-list">
-        <li>
-            <img src="./images/tv samsung certa.avif" alt="Imagem de televisao marca samsung">
-            <h3>Marca: Samsung</h3>
-            <h4>R$ 4.599,00</h4>
-            <h5>R$ 245,55 em 18x</h5>
-            <a href="https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/" target="_blank" rel="nooper noreferrer">Detalhes</a>
-        </li>
-        <li>
-            <img src="./images/Tv lg certa.avif" alt="Imagem de televisao marca LG">
-            <h3>Marca: LG</h3>
-            <h4>R$ 7.459,00</h4>
-            <h5>R$ 6.159,00 em 12x</h5>
-            <a href="https://www.lg.com/br/tvs-e-soundbars/oled/oled55b6psa/" target="_blank" rel="nooper noreferrer">Detalhes</a>
-        </li>
-    </ol>
+    <table>
+        <caption>Lista de Tvs disponíveis com preços e parcelamentos</caption>
+        
+        <thead>
+            <tr>
+                <th scope="col">Marca</th>
+                <th scope="col">Imagem</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Parcelamento</th>
+                <th scope="col">Detalhes</th>
+            </tr>
+        </thead>
 
-    <a href="./products.html">Voltar</a>
+        <tbody>
+            <tr>
+                <th scope="row">
+                
+                    Samsung
+                </th>
+                
+                <td>
+                  <img src="./images/tv samsung certa.avif" alt="Imagem de televisao marca samsung">   
+                </td> 
+                <td>R$ 4.599,00</td>
+                <td>R$ 4.419,9 em 18x</td>
+                <td>
+                    <a class="details" href="https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+                </td>
+            </tr>
+        </tbody>
+
+
+
+        <tbody>
+            <tr>
+                <th scope="row">
+                
+                    LG
+                </th>
+                
+                <td>
+                   <img src="./images/Tv lg certa.avif" alt="Imagem de televisao marca LG"> 
+                </td> 
+                <td>R$ 7.459,00</td>
+                <td>R$ 6.159,00 em 12x</td>
+                <td>
+                    <a class="details" href="https://www.lg.com/br/tvs-e-soundbars/oled/oled55b6psa/" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <form>
+        <fieldset>
+            <legend>Solicitação de Modelo de TV</legend>
+            
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
+                <br>
+                <label for="modelo">Modelo:</label>
+                <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
+                <br>
+                <datalist>
+                    <option value="1">Samsung</option>
+                    <option value="2">LG</option>
+                </datalist>
+                <br>
+
+
+                <button type="reset">Limpar Formulário</button>
+                <br>
+                <button type="submit">Enviar solicitação</button>
+        </fieldset>
+    </form>
+   
+    <h2>Perguntas mais frequentes</h2>
+    <details>
+        <summary id="sumario">Como solicitar um modelo?</summary>
+            <p>
+            Caso o modelo desejado não esteja presente no site, você deve fazer a solicitação através do formulário acima.
+            </p>
+    </details>
+    <a class="go-back" href="./products.html">Voltar</a>
 </body>
 </html>

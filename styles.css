@@ -7,17 +7,41 @@ h1
 a
 {
     text-decoration: none;
-    
-}
+    background-color: color-mix(in srgb, rgb(56, 140, 236) 50%, white 50%);
+    border-radius: 20px;
+    padding: 4px;
+    color: black;
 
-a:hover
-{
-opacity: 0.5;
+    
 }
 body
 {
     padding: 20px;
     margin: 20px;
+    
+}
+fieldset
+{
+    margin-top: 22px;
+}
+input
+{
+    margin-top: 4px;
+}
+#sumario
+{
+    background-image: linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248) );
+    margin-bottom: 15px;
+    border-color: black;
+}
+a:hover
+{
+opacity: 0.8;
+}
+
+.details
+{
+    text-align: center;
 }
 p::first-letter
 {
@@ -43,11 +67,17 @@ h6{
     text-align: center;
 }
 
+tbody
+{
+    text-align: center;
+    
+}
 img
 {
     display: block;
     margin: auto;
-    max-width: 550px;
+    text-align: center;
+    max-width: 400px;
 }
 
 .banner
@@ -75,3 +105,14 @@ img
     top: 0;
     z-index: 3;
 }
+.details
+{
+    text-align: center;
+    
+    
+}
+
+
+
+
+
