@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="page-category_tvs">
-    <h1>Categoria de produtos</h1>
-    <h2>TVs</h2>
+    <header class="header-tvs">
+        <h1>Categoria de produtos</h1>
+        <h2>TVs</h2>
+    </header>
+    
     <table>
         <caption>Lista de Tvs disponíveis com preços e parcelamentos</caption>
         
@@ -62,41 +65,60 @@
         </tbody>
 
     </table>
+    <br>
+    
+    <button id="abrir">Formulário</button>
+        <dialog id="meuDialog">
+            <form>
+                <fieldset>
+                    <legend>Solicitação de Modelo de TV</legend>
+                    
+                        <label for="Nome">Nome:</label>
+                        <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>
+                        <br>
 
-    <form>
-        <fieldset>
-            <legend>Solicitação de Modelo de TV</legend>
+                        <label  for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
+                        <br>
+                        <label for="modelo">Modelo:</label>
+                        <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
+                        <br>
+                        <datalist>
+                            <option value="1">Samsung</option>
+                            <option value="2">LG</option>
+                        </datalist>
+                        <br>
+
+
+                        <button type="reset">Limpar Formulário</button> <button type="submit">Enviar solicitação</button>
+                        <br>
+                        
+                </fieldset>
             
-                <label for="Nome">Nome:</label>
-                <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>
-                <br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
-                <br>
-                <label for="modelo">Modelo:</label>
-                <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
-                <br>
-                <datalist>
-                    <option value="1">Samsung</option>
-                    <option value="2">LG</option>
-                </datalist>
-                <br>
-
-
-                <button type="reset">Limpar Formulário</button>
-                <br>
-                <button type="submit">Enviar solicitação</button>
-        </fieldset>
-    </form>
-   
+            </form>
+        </dialog>
     <h2>Perguntas mais frequentes</h2>
     <details>
         <summary id="sumario">Como solicitar um modelo?</summary>
-            <p>
+            <p class="answer">
             Caso o modelo desejado não esteja presente no site, você deve fazer a solicitação através do formulário acima.
             </p>
     </details>
-    <a class="go-back" href="./products.html">Voltar</a>
+    <a class="go-back" href="./products.html">↩</a>
 </body>
 </html>
+
+
+<script>
+
+const dialog = document.getElementById("meuDialog");
+
+document.getElementById("abrir").addEventListener("click", () => {
+  dialog.showModal();
+});
+
+document.getElementById("fechar").addEventListener("click", () => {
+  dialog.close();
+});
+
+</script>

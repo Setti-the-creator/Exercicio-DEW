@@ -1,3 +1,9 @@
+html
+{
+    font-family: cursive;
+}
+
+
 h1
 {
     text-transform: uppercase;
@@ -24,25 +30,50 @@ fieldset
 {
     margin-top: 22px;
 }
+
+
+                                                            /* Formulario */
+
+
 input
 {
     margin-top: 4px;
-}
-#sumario
-{
-    background-image: linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248) );
-    margin-bottom: 15px;
-    border-color: black;
-}
-a:hover
-{
-opacity: 0.8;
+    border-radius: 7px;
+    border-top: none;
 }
 
-.details
+button
 {
-    text-align: center;
+    margin-top: 4px;
+    background-color: rgb(118, 186, 241);
+    border: 1px solid black;
+    border-radius: 10px;
 }
+
+table
+{
+    margin-left: 27%;
+    border: 2px solid black;
+    
+}
+form
+{
+    font-family: cursive;
+    width: 270px;
+
+}
+
+
+
+
+
+
+
+a:hover
+{
+    opacity: 0.8;
+}
+
 p::first-letter
 {
     text-transform: uppercase;
@@ -52,6 +83,7 @@ a:hover
 {
     text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -61,17 +93,6 @@ h6{
     text-align: center;
 }
 
-#primary-list
-{
-    list-style: none;
-    text-align: center;
-}
-
-tbody
-{
-    text-align: center;
-    
-}
 img
 {
     display: block;
@@ -79,6 +100,83 @@ img
     text-align: center;
     max-width: 400px;
 }
+
+tbody
+{
+    text-align: center;
+    
+}
+
+th
+{
+    background-image:linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248));
+}
+th,td
+{
+    border: 2px solid black;
+}
+caption
+{
+    font-weight: bold;
+}
+
+
+
+                                                            /* IDs */
+
+
+
+#abrir
+{
+    
+    height: 30px;
+    border:0.5px;
+    
+}
+#sumario
+{
+    background-image: linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248) );
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-bottom:none;
+    
+}
+#primary-list
+{
+    list-style: none;
+    text-align: center;
+}
+
+#email
+{
+    margin-left: 14px;
+}
+
+#Nome
+{
+    margin-left: 12px;
+}
+
+
+
+                                                                    /* Class */
+
+.header-tvs
+{
+     background-image: linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248) );
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100px;
+     margin-top: -60px;
+     margin-right: -60px;
+     margin-left: -60px;
+}
+.details
+{
+    text-align: center;
+}
+
+
 
 .banner
 {
@@ -89,8 +187,10 @@ img
     background-repeat: no-repeat;
     color: white;
     height: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 50px;
+    margin-top: -60px;
+    margin-right: -60px;
+    margin-left: -60px;
     
 }
 
@@ -111,6 +211,17 @@ img
     
     
 }
+
+
+
+.answer
+{
+    margin-top: -15px;
+    border:2px solid black;
+    border-top: none;
+    border-radius: 3.7px;
+}
+
 
 
 
