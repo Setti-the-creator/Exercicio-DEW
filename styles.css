@@ -9,7 +9,21 @@ footer
 {
     padding: 20px;
 }
-
+footer {
+  flex-shrink: 0;
+  background-image:linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248));
+  color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000; 
+}
 h1
 {
     text-transform: uppercase;
@@ -60,6 +74,13 @@ button
     background-color: rgb(118, 186, 241);
     border: 1px solid black;
     border-radius: 10px;
+    
+}
+
+button:hover
+{
+    transform: scale(1.1);
+    transition: 0.9s;
 }
 
 table
@@ -83,10 +104,11 @@ form
 img:hover
 {
     transform: scale(1.2);
+    transition: 0.8s;
 }
 a:hover
 {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 p::first-letter
@@ -114,6 +136,7 @@ img
     margin: auto;
     text-align: center;
     max-width: 400px;
+    
 }
 
 tbody
@@ -153,7 +176,7 @@ caption
 {
     background-image: linear-gradient(to Right, rgb(84, 167, 235), rgb(171, 172, 248) );
     margin-bottom: 15px;
-    border: 2px solid black;
+    border: 2px solid rgb(68, 67, 67);
     border-bottom:none;
     
 }
@@ -210,6 +233,7 @@ caption
      margin-top: -60px;
      margin-right: -60px;
      margin-left: -60px;
+
 }
 .details
 {
@@ -217,7 +241,10 @@ caption
     margin: 20px;
 }
 
-
+.acessories
+{
+    border: 2px groove black;
+}
 
 .banner
 {
@@ -251,14 +278,30 @@ caption
     top: 0;
     z-index: 3;
 }
-.details
+details
 {
-    text-align: center;
+    max-width: 50%;
     
     
 }
 
-
+.go-back
+{
+  position: fixed; 
+  top: 15px;       
+  left: 15px;      
+  z-index: 9999;   
+  padding: 10px 20px;
+  background-color: rgb(84, 167, 235);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.go-back:hover
+{
+    background-color: rgb(50, 151, 233);
+}
 
 .answer
 {
