@@ -9,10 +9,66 @@
 </head>
 <body class="page-category_tvs">
     <header class="header-tvs">
-        <h1>Categoria de produtos</h1>
-        <h2>TVs</h2>
+        <h1 class="intro">Marcas de Tvs</h1>
+        
     </header>
     
+
+    <ul class="products-list">
+        <li class="product">
+            <h3> Samsung</h3>
+
+            <figure>
+                <img src="./images/tv samsung certa.avif">
+            </figure>
+            <p class="price">
+                <strong>Preço:</strong>
+                <data value="4599">R$ 4.599,00</data>
+            </p>
+
+
+            <p class="installament">
+                <strong>Parcelamento:</strong>
+                <data value="4419.9">R$4.419,9</data> em 18x
+            </p>
+
+            
+            <a class="details" href="./images/tv samsung certa.avif" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+        
+        </li>
+
+
+    
+    <li class="product">
+        <h3> LG</h3>
+
+        <figure>
+            <img src="./images/Tv lg certa.avif">
+        </figure>
+        <p class="price">
+            <strong>Preço:</strong>
+            <data value="7459">R$ 7.459,00</data>
+        </p>
+
+
+        <p class="installament">
+            <strong>Parcelamento:</strong>
+            <data value="6159">R$6.159,00</data> em 12x
+        </p>
+
+         <a class="details" href="./images/Tv lg certa.avif" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+        
+    </li>
+</ul>
+
+
+
+
+
+
+
+<!-- 
+
     <table>
         <caption>Lista de Tvs disponíveis com preços e parcelamentos</caption>
         
@@ -28,7 +84,7 @@
 
         <tbody>
             <tr>
-                <th scope="row">
+                <th class="products-title" scope="row">
                 
                     Samsung
                 </th>
@@ -39,7 +95,7 @@
                 <td>R$ 4.599,00</td>
                 <td>R$ 4.419,9 em 18x</td>
                 <td>
-                    <a class="details" href="https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+                    
                 </td>
             </tr>
         </tbody>
@@ -48,7 +104,7 @@
 
         <tbody>
             <tr>
-                <th scope="row">
+                <th class="products-title" scope="row">
                 
                     LG
                 </th>
@@ -67,19 +123,44 @@
     </table>
     <br>
     
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <button id="abrir">Formulário</button>
         <dialog id="meuDialog">
-            <form>
+            <form class="products-form">s
                 <fieldset>
                     <legend>Solicitação de Modelo de TV</legend>
                     
+                    <div class="col">
                         <label for="Nome">Nome:</label>
-                        <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>
-                        <br>
-
+                        <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>                      
+                    </div>
+                       
+                    <div class="col">
                         <label  for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
-                        <br>
+                    </div>
+                        
                         <label for="modelo">Modelo:</label>
                         <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
                         <br>
@@ -89,8 +170,10 @@
                         </datalist>
                         <br>
 
-
-                        <button type="reset">Limpar Formulário</button> <button type="submit">Enviar solicitação</button>
+                        <menu class="products-form-buttons">
+                            <button type="reset">Limpar Formulário</button> <button type="submit">Enviar solicitação</button>
+                        </menu>
+                        
                         <br>
                         
                 </fieldset>
