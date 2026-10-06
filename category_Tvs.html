@@ -144,59 +144,63 @@
 
 
 
-
-    <button id="abrir">Formulário</button>
-        <dialog id="meuDialog">
-            <form class="products-form">s
-                <fieldset>
-                    <legend>Solicitação de Modelo de TV</legend>
-                    
-                    <div class="col">
-                        <label for="Nome">Nome:</label>
-                        <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>                      
-                    </div>
-                       
-                    <div class="col">
-                        <label  for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
-                    </div>
-                        
-                        <label for="modelo">Modelo:</label>
-                        <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
-                        <br>
-                        <datalist>
-                            <option value="1">Samsung</option>
-                            <option value="2">LG</option>
-                        </datalist>
-                        <br>
-
-                        <menu class="products-form-buttons">
-                            <button type="reset">Limpar Formulário</button> <button type="submit">Enviar solicitação</button>
-                        </menu>
-                        
-                        <br>
-                        
-                </fieldset>
-            
-            </form>
-        </dialog>
-    <h2>Perguntas mais frequentes</h2>
-    <details>
-        <summary id="sumario">Como solicitar um modelo?</summary>
-            <p class="answer">
-            Caso o modelo desejado não esteja presente no site, você deve fazer a solicitação através do formulário acima.
-            </p>
+    <div class="FAQ">
+        <h2>FAQ</h2>
+        <div class="pergunta">
+            <details >
+                <summary id="sumario">Como solicitar um modelo? ☏ </summary>
+                    <p class="answer">
+                    Caso o modelo desejado não esteja presente no site, você deve fazer a solicitação através do formulário abaixo.
+                    </p>
+                
+            </details>
+        </div>   
+        <div class="pergunta">
+            <details>
+                <summary id="sumario">Como é enviado? ⛟</summary>
+                    <p class="answer">
+                    O seu produto após ser solicitado será enviato através dos correios.
+                    </p>
+            </details>
+        </div>
+        <a class="go-back" href="./index.html">↩</a>
         
-    </details>
-    <details>
-         <summary id="sumario">Como é enviado?</summary>
-            <p class="answer">
-            O seu produto após ser solicitado será enviato através dos correios.
-            </p>
-    </details>
-    <a class="go-back" href="./index.html">↩</a>
-    
+        <button id="abrir">Formulário</button>
+            <dialog id="meuDialog">
+                <form class="products-form">
+                    <fieldset>
+                        <legend>Solicitação de Modelo de TV</legend>
+                        
+                        <div class="col">
+                            <label for="Nome">Nome:</label>
+                            <input type="text" id="Nome" name="Nome" placeholder="Ex: Victor Setti" autocomplete="name" required>                      
+                        </div>
+                        
+                        <div class="col">
+                            <label  for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Ex:abebs@gmail.com" autocomplete="email" required>
+                        </div>
+                            
+                            <label for="modelo">Modelo:</label>
+                            <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required>
+                            <br>
+                            <datalist>
+                                <option value="1">Samsung</option>
+                                <option value="2">LG</option>
+                            </datalist>
+                            <br>
 
+                            <menu class="products-form-buttons">
+                                <button type="reset">Limpar Formulário</button> <button type="submit">Enviar solicitação</button>
+                            </menu>
+                            
+                            <br>
+                            
+                    </fieldset>
+                
+                </form>
+            </dialog>
+    </div>
     <footer>© 2026 ReSetti. Todos os direitos reservados. Proibida a reprodução total ou parcial.</footer>
 </body>
 </html>
