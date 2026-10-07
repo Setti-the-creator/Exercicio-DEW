@@ -15,7 +15,7 @@
     
 
     <ul class="products-list">
-        <li class="product">
+        <li class="product product-1">
             <h3> Samsung</h3>
 
             <figure>
@@ -33,13 +33,44 @@
             </p>
 
             
-            <a class="details" href="./images/tv samsung certa.avif" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
-        
+            <a class="details" href="https://www.samsung.com/br/tvs/qled-tv/qn90f-43-inch-neo-qled-4k-mini-led-smart-tv-qn43qn90fagxzd/" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+            <br>
+            <button id="open" class="button-comprar">Comprar</button>
+                <dialog id="form-compras">
+                    <form class="compra">
+                        <fieldset>
+                            <legend>Informações da compra</legend>
+                        
+                            <div class="col">
+                                <label for="Marca">Marca: Samsung </label>                    
+                            </div>
+                        
+                            <div class="col">
+                                <label  for="price">Preço: R$ 4.599,00 </label>
+                                    <menu class="products-form-buttons">
+                                        <br>
+                                        <button class="button-comprar">Parcerlar</button>
+                                    </menu>
+                            </div>
+                            
+                                <label for="modelo">Modelo: Vision AI TV 43 polegadas Neo QLED 4K QN90F</label>
+                                s
+
+                             <menu class="products-form-buttons">
+                                    <button class="button-comprar" type="submit">Finalizar Compra</button>
+                                </menu>
+                            
+                                <br>
+                            
+                        </fieldset>
+                
+                    </form>
+                </dialog>
         </li>
 
 
     
-    <li class="product">
+    <li class="product product-2">
         <h3> LG</h3>
 
         <figure>
@@ -56,8 +87,93 @@
             <data value="6159">R$6.159,00</data> em 12x
         </p>
 
-         <a class="details" href="./images/Tv lg certa.avif" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
-        
+         <a class="details" href="https://www.lg.com/br/tvs-e-soundbars/oled/oled55b6psa/" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+        <br>
+        <button id="abab" class="button-comprar">Comprar</button>
+                <dialog id="form-compras2">
+                    <form class="compra">
+                        <fieldset>
+                            <legend>Informações da compra</legend>
+                        
+                            <div class="col">
+                                <label for="Marca">Marca: LG </label>                    
+                            </div>
+                        
+                            <div class="col">
+                                <label  for="price">Preço: R$ 7.459,00 </label>
+                                    <menu class="products-form-buttons">
+                                        <br>
+                                        <button class="button-comprar">Parcerlar</button>
+                                    </menu>
+                            </div>
+                            
+                                <label for="modelo">Modelo: Smart TV LG OLED AI 4K B6 55 polegadas 2026</label>
+                                
+
+                             <menu class="products-form-buttons">
+                                    <button class="button-comprar" type="submit">Finalizar Compra</button>
+                                </menu>
+                            
+                                <br>
+                            
+                        </fieldset>
+                
+                    </form>
+                </dialog>
+    </li>
+
+
+    <li class="product product-3">
+        <h3> Philco</h3>
+
+        <figure>
+            <img src="./images/tv philco correta.jpg">
+        </figure>
+        <p class="price">
+            <strong>Preço:</strong>
+            <data value="7459">R$ 2.529,90</data>
+        </p>
+
+
+        <p class="installament">
+            <strong>Parcelamento:</strong>
+            <data value="6159">R$ 2.529,90</data> em 10x
+
+        </p>
+
+         <a class="details" href="https://www.philco.com.br/tv-ptv43va4regb-099433039/p" target="_blank" rel="nooper noreferrer">Ver detalhes</a>
+        <br>
+        <button id="abab" class="button-comprar">Comprar</button>
+                <dialog id="form-compras2">
+                    <form class="compra">
+                        <fieldset>
+                            <legend>Informações da compra</legend>
+                        
+                            <div class="col">
+                                <label for="Marca">Marca: Philco </label>                    
+                            </div>
+                        
+                            <div class="col">
+                                <label  for="price">Preço: R$ 2.529,90 </label>
+                                    <menu class="products-form-buttons">
+                                        <br>
+                                        <button class="button-comprar">Parcerlar</button>
+                                    </menu>
+                            </div>
+                            
+                                <label for="modelo">Modelo: Smart TV 43" Philco LED Roku TV Dolby Audio PTV43VA4REGB - Bivolt</label>
+                                s
+
+                             <menu class="products-form-buttons">
+                                    <button class="button-comprar" type="submit">Finalizar Compra</button>
+                                </menu>
+                            
+                                <br>
+                            
+                        </fieldset>
+                
+                    </form>
+                </dialog>
     </li>
 </ul>
 
@@ -134,16 +250,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <div class="FAQ">
         <h2>FAQ</h2>
         <div class="pergunta">
@@ -165,7 +271,7 @@
         </div>
         <a class="go-back" href="./index.html">↩</a>
         
-        <button id="abrir">Formulário</button>
+        <button class="forms" id="abrir">Formulário</button>
             <dialog id="meuDialog">
                 <form class="products-form">
                     <fieldset>
@@ -220,6 +326,24 @@ document.getElementById("fechar").addEventListener("click", () => {
 
 
 
-const home = document
+
+
+
+
+
+
 
 </script>
+
+<script>
+    const compra1 = document.getElementById("form-compras");
+
+document.getElementById("open").addEventListener("click", () => {
+  compra1.showModal();
+});
+
+document.getElementById("fechar").addEventListener("click", () => {
+  compra1.close();
+});
+</script>
+
