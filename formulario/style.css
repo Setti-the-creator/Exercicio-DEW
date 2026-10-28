@@ -1,0 +1,150 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #080808, #1c1c1c);
+    color: #ffffff;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Formulário */
+form {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Caixa principal */
+fieldset {
+    background-color: #151515;
+    border: 2px solid #e50914;
+    border-radius: 16px;
+
+    padding: 35px 30px;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.20);
+}
+
+/* Título */
+legend {
+    color: #ff2633;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 0 12px;
+}
+
+/* Espaçamento dos campos */
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+/* Labels */
+label {
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 13px 14px;
+
+    background-color: #242424;
+    color: #ffffff;
+
+    border: 1px solid #444444;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao selecionar um campo */
+input:focus {
+    border-color: #ff1f2d;
+    box-shadow: 0 0 10px rgba(255, 31, 45, 0.25);
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Botão calcular */
+button[type="button"] {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+button[type="button"]:hover {
+    background-color: #ff2633;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Botão limpar */
+button[type="reset"] {
+    background-color: #292929;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+button[type="reset"]:hover {
+    background-color: #3b3b3b;
+    border-color: #e50914;
+    transform: translateY(-2px);
+}
+
+/* Resultado da média */
+#resultado {
+    margin-top: 22px;
+    padding: 15px;
+
+    background-color: #222222;
+    border-left: 4px solid #e50914;
+    border-radius: 6px;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+    fieldset {
+        padding: 25px 18px;
+    }
+
+    legend {
+        font-size: 19px;
+    }
+}
