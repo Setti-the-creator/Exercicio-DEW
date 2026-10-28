@@ -1,10 +1,3 @@
-
-const dialog = document.getElementById("meuDialog");
-
-document.getElementById("abrir").addEventListener("click", () => {
-  dialog.showModal();
-});
-
 const nota1 = document.getElementById("Nota-1")
 const nota2 = document.getElementById("Nota-2")
 
